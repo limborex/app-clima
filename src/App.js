@@ -25,7 +25,7 @@ function App() {
       const APIKEY= "20f8effa7c6bfb12d6e50c16efe23c85"
       const unit="";
 
-      const result= await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}&units=${"metric"}`)
+      const result= await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}&units=${"metric"}`)
     
       await setAllData ({
         city:result.data.name,
@@ -71,7 +71,7 @@ function App() {
       <div className='info'>
       <section >
         {/*inicio del apartado visual de la pagina*/}
-        <img className="icon" src={"http://openweathermap.org/img/wn/"+allData.wheatherIcon+"@2x.png"} alt=" "/>
+        <img className="icon" src={"https://openweathermap.org/img/wn/"+allData.wheatherIcon+"@2x.png"} alt=" "/>
         <br/>
         <br/>
         <br/>
